@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cj7-dw-7KX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="dCy-md-sDr">
+            <objects>
+                <viewController id="cj7-dw-7KX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mPh-cf-Rfk"/>
+                        <viewControllerLayoutGuide type="bottom" id="G4f-C5-8dZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fp0-gY-EtU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWs-z9-X4k">
+                                <rect key="frame" x="36" y="135" width="303" height="398"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="album1" translatesAutoresizingMaskIntoConstraints="NO" id="fCG-qX-aQg">
+                                        <rect key="frame" x="0.0" y="0.0" width="303" height="303"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="fCG-qX-aQg" secondAttribute="height" multiplier="1:1" id="78Q-y2-99v"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="albumArt"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="zPositionIfMatched(1)"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroModifiers" value="zPositionIfMatched(1)"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AWAKE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzv-Ef-Bdh">
+                                        <rect key="frame" x="18" y="319" width="79" height="31"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="albumTitle"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TYCHO MUSIC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhd-9d-1Dz">
+                                        <rect key="frame" x="16" y="358" width="116" height="24"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" red="0.25490196079999999" green="0.28627450980000002" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="artist"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57I-S8-wm7">
+                                        <rect key="frame" x="239" y="279" width="48" height="48"/>
+                                        <color key="backgroundColor" red="0.25490196079999999" green="0.28627450980000002" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="48" id="M3G-Zg-AHr"/>
+                                            <constraint firstAttribute="height" constant="48" id="UXn-2j-1bU"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_play_arrow_white"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="playButton"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="scale(0.5)  translate(100, 0) fade zPosition(2)"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroModifiers" value="scale(0.5)  translate(100, 0) fade zPosition(2)"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="ztp-gF-CXU" kind="presentation" id="QXV-gF-a0I"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="hhd-9d-1Dz" firstAttribute="top" secondItem="nzv-Ef-Bdh" secondAttribute="bottom" constant="8" id="6av-YU-QgN"/>
+                                    <constraint firstItem="nzv-Ef-Bdh" firstAttribute="top" secondItem="fCG-qX-aQg" secondAttribute="bottom" constant="16" id="9P5-Nn-Gkj"/>
+                                    <constraint firstItem="57I-S8-wm7" firstAttribute="top" secondItem="fCG-qX-aQg" secondAttribute="bottom" constant="-24" id="bOJ-G4-q9f"/>
+                                    <constraint firstAttribute="bottom" secondItem="hhd-9d-1Dz" secondAttribute="bottom" constant="16" id="gdk-rj-p5z"/>
+                                    <constraint firstItem="fCG-qX-aQg" firstAttribute="leading" secondItem="TWs-z9-X4k" secondAttribute="leading" id="ouf-Vg-YOa"/>
+                                    <constraint firstAttribute="trailing" secondItem="fCG-qX-aQg" secondAttribute="trailing" id="pvW-qd-rJG"/>
+                                    <constraint firstItem="hhd-9d-1Dz" firstAttribute="leading" secondItem="TWs-z9-X4k" secondAttribute="leading" constant="16" id="rEU-go-f0C"/>
+                                    <constraint firstAttribute="trailing" secondItem="57I-S8-wm7" secondAttribute="trailing" constant="16" id="rFO-hC-hZ5"/>
+                                    <constraint firstItem="nzv-Ef-Bdh" firstAttribute="leading" secondItem="TWs-z9-X4k" secondAttribute="leading" constant="18" id="rbE-24-aro"/>
+                                    <constraint firstItem="fCG-qX-aQg" firstAttribute="top" secondItem="TWs-z9-X4k" secondAttribute="top" id="t0j-TG-XYE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="albumBackground"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="source(albumArt) fade"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.25490196079999999" green="0.28627450980000002" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7Z-dM-zfQ">
+                                <rect key="frame" x="4" y="28" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="JQB-cV-Ve7"/>
+                                    <constraint firstAttribute="height" constant="48" id="Rq7-Kz-uBS"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="ic_keyboard_arrow_down"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="fade translate(0, -150)"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="back"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifiers" value="fade translate(0, -150)"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ht_dismiss:" destination="kJ3-XH-85R" eventType="touchUpInside" id="SNp-7H-sDd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92324218749999998" green="0.9169083334" blue="0.8844593261" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Q7Z-dM-zfQ" firstAttribute="leading" secondItem="Fp0-gY-EtU" secondAttribute="leadingMargin" constant="-12" id="8Lw-1P-FIZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TWs-z9-X4k" secondAttribute="trailing" constant="20" id="Hct-sG-YvV"/>
+                            <constraint firstItem="Q7Z-dM-zfQ" firstAttribute="top" secondItem="mPh-cf-Rfk" secondAttribute="bottom" constant="8" id="eiO-Ae-nl8"/>
+                            <constraint firstItem="TWs-z9-X4k" firstAttribute="leading" secondItem="Fp0-gY-EtU" secondAttribute="leadingMargin" constant="20" id="fgZ-mi-hk5"/>
+                            <constraint firstItem="TWs-z9-X4k" firstAttribute="centerY" secondItem="Fp0-gY-EtU" secondAttribute="centerY" id="txg-uO-Pm8"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="musicBackground"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kJ3-XH-85R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="S0m-rY-w2c">
+            <objects>
+                <viewController id="ztp-gF-CXU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="27s-bC-m8g"/>
+                        <viewControllerLayoutGuide type="bottom" id="8VT-aK-1At"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rVq-ez-tUR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="album1" translatesAutoresizingMaskIntoConstraints="NO" id="YGr-YX-M5H">
+                                <rect key="frame" x="46" y="97" width="283" height="283"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="albumArt"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AWAKE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9O-rM-w9q">
+                                <rect key="frame" x="134" y="398" width="108" height="41"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="albumTitle"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TYCHO MUSIC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVN-Ng-nmN">
+                                <rect key="frame" x="130" y="447" width="116" height="24"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.25490196079999999" green="0.28627450980000002" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="artist"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8W-1I-Qcn">
+                                <rect key="frame" x="164" y="539" width="48" height="48"/>
+                                <color key="backgroundColor" red="0.25490196079999999" green="0.28627450980000002" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="75Q-ag-Jzc"/>
+                                    <constraint firstAttribute="height" constant="48" id="N1g-sy-g6U"/>
+                                </constraints>
+                                <state key="normal" image="ic_pause_white"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="playButton"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="zPosition(2)"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifiers" value="zPosition(2)"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ht_dismiss:" destination="aKb-dA-21s" eventType="touchUpInside" id="ST1-oe-D0W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5H-6q-Nxn">
+                                <rect key="frame" x="232" y="539" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="KA0-h4-oCf"/>
+                                    <constraint firstAttribute="width" constant="48" id="Skf-Ye-f53"/>
+                                </constraints>
+                                <color key="tintColor" red="0.25490196079999999" green="0.28627450980000002" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="ic_fast_forward"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ht_dismiss:" destination="aKb-dA-21s" eventType="touchUpInside" id="WOZ-Qr-iFP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8H-VC-vOa">
+                                <rect key="frame" x="96" y="539" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="21R-NG-w9Q"/>
+                                    <constraint firstAttribute="width" constant="48" id="Ygf-il-Xjj"/>
+                                </constraints>
+                                <color key="tintColor" red="0.25490196079999999" green="0.28627450980000002" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="ic_fast_rewind"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ht_dismiss:" destination="aKb-dA-21s" eventType="touchUpInside" id="y5D-yp-cUJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USd-q0-oeH">
+                                <rect key="frame" x="16" y="539" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="UlZ-pG-O2t"/>
+                                    <constraint firstAttribute="width" constant="48" id="X2T-Ds-tUl"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="ic_repeat"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ht_dismiss:" destination="aKb-dA-21s" eventType="touchUpInside" id="N3E-WA-XGS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UaQ-jW-D4c">
+                                <rect key="frame" x="311" y="539" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="icB-Fc-9kL"/>
+                                    <constraint firstAttribute="height" constant="48" id="nfy-Jn-Qet"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="ic_shuffle"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ht_dismiss:" destination="aKb-dA-21s" eventType="touchUpInside" id="sow-lK-fm7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yt7-7m-A6b">
+                                <rect key="frame" x="4" y="28" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="5jP-rn-RRJ"/>
+                                    <constraint firstAttribute="height" constant="48" id="zoW-Wg-jUg"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="ic_keyboard_arrow_down"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="fade translate(0, -150)"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="back"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifiers" value="fade translate(0, -150)"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ht_dismiss:" destination="aKb-dA-21s" eventType="touchUpInside" id="lJT-W5-ARg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YGr-YX-M5H" firstAttribute="centerX" secondItem="rVq-ez-tUR" secondAttribute="centerX" id="1ZF-kJ-IzS"/>
+                            <constraint firstItem="S8W-1I-Qcn" firstAttribute="centerY" secondItem="n8H-VC-vOa" secondAttribute="centerY" id="6Ui-dT-1Tx"/>
+                            <constraint firstItem="YGr-YX-M5H" firstAttribute="width" secondItem="YGr-YX-M5H" secondAttribute="height" multiplier="1:1" id="7Sl-Is-hGW"/>
+                            <constraint firstItem="S8W-1I-Qcn" firstAttribute="leading" secondItem="n8H-VC-vOa" secondAttribute="trailing" constant="20" id="CMB-hw-ZuZ"/>
+                            <constraint firstItem="a5H-6q-Nxn" firstAttribute="centerY" secondItem="n8H-VC-vOa" secondAttribute="centerY" id="Cve-GD-Y32"/>
+                            <constraint firstItem="UaQ-jW-D4c" firstAttribute="trailing" secondItem="rVq-ez-tUR" secondAttribute="trailingMargin" id="KB3-ut-Z2k"/>
+                            <constraint firstItem="M9O-rM-w9q" firstAttribute="centerX" secondItem="rVq-ez-tUR" secondAttribute="centerX" id="O1F-UZ-sup"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YGr-YX-M5H" secondAttribute="trailing" constant="30" id="QMp-QT-ShX"/>
+                            <constraint firstItem="8VT-aK-1At" firstAttribute="top" secondItem="S8W-1I-Qcn" secondAttribute="bottom" constant="80" id="Rke-ta-LmY"/>
+                            <constraint firstItem="mVN-Ng-nmN" firstAttribute="centerX" secondItem="rVq-ez-tUR" secondAttribute="centerX" id="Rtp-3F-pZ1"/>
+                            <constraint firstItem="M9O-rM-w9q" firstAttribute="top" secondItem="YGr-YX-M5H" secondAttribute="bottom" constant="18" id="UhP-gX-uDI"/>
+                            <constraint firstItem="yt7-7m-A6b" firstAttribute="leading" secondItem="rVq-ez-tUR" secondAttribute="leadingMargin" constant="-12" id="V3M-Ep-nrY"/>
+                            <constraint firstItem="S8W-1I-Qcn" firstAttribute="centerX" secondItem="rVq-ez-tUR" secondAttribute="centerX" id="cyH-Kg-R7E"/>
+                            <constraint firstItem="USd-q0-oeH" firstAttribute="leading" secondItem="rVq-ez-tUR" secondAttribute="leadingMargin" id="jQK-cF-FcN"/>
+                            <constraint firstItem="S8W-1I-Qcn" firstAttribute="centerY" secondItem="USd-q0-oeH" secondAttribute="centerY" id="nxo-5W-7t7"/>
+                            <constraint firstItem="UaQ-jW-D4c" firstAttribute="centerY" secondItem="USd-q0-oeH" secondAttribute="centerY" id="sVO-gN-C5H"/>
+                            <constraint firstItem="a5H-6q-Nxn" firstAttribute="leading" secondItem="S8W-1I-Qcn" secondAttribute="trailing" constant="20" id="t6t-gu-hKh"/>
+                            <constraint firstItem="yt7-7m-A6b" firstAttribute="top" secondItem="27s-bC-m8g" secondAttribute="bottom" constant="8" id="tNO-mY-OT5"/>
+                            <constraint firstItem="YGr-YX-M5H" firstAttribute="centerY" secondItem="rVq-ez-tUR" secondAttribute="centerY" constant="-95" id="vEw-Xh-cjK"/>
+                            <constraint firstItem="mVN-Ng-nmN" firstAttribute="top" secondItem="M9O-rM-w9q" secondAttribute="bottom" constant="8" id="vSS-FD-9aa"/>
+                            <constraint firstItem="YGr-YX-M5H" firstAttribute="leading" secondItem="rVq-ez-tUR" secondAttribute="leadingMargin" constant="30" id="y7l-8M-v2v"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="albumBackground"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aKb-dA-21s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="800" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="album1" width="1024" height="1024"/>
+        <image name="ic_fast_forward" width="24" height="24"/>
+        <image name="ic_fast_rewind" width="24" height="24"/>
+        <image name="ic_keyboard_arrow_down" width="24" height="24"/>
+        <image name="ic_pause_white" width="24" height="24"/>
+        <image name="ic_play_arrow_white" width="24" height="24"/>
+        <image name="ic_repeat" width="24" height="24"/>
+        <image name="ic_shuffle" width="24" height="24"/>
+    </resources>
+</document>

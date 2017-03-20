@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XCN-2F-3vd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller 1-->
+        <scene sceneID="UXW-NP-pRv">
+            <objects>
+                <viewController title="View Controller 1" id="XCN-2F-3vd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sgh-tj-GBW"/>
+                        <viewControllerLayoutGuide type="bottom" id="nkm-YM-Clr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wgV-hu-7r0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="440"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mb5-9p-oWq">
+                                <rect key="frame" x="22" y="183" width="75" height="75"/>
+                                <color key="backgroundColor" red="0.3231979311" green="0.62352418899999995" blue="0.80385208129999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Q9m-DZ-aiZ"/>
+                                    <constraint firstAttribute="width" constant="75" id="Rwo-Ds-zTM"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="blue"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="zPosition(1) arc"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifiers" value="zPosition(1) arc"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kv7-FP-mBJ">
+                                <rect key="frame" x="105" y="183" width="110" height="75"/>
+                                <color key="backgroundColor" red="0.65110915899999999" green="0.49157077069999999" blue="0.75600677729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="ikl-NQ-pKU"/>
+                                    <constraint firstAttribute="height" constant="75" id="p9F-MP-IGn"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="purple"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="zPosition(2) arc"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifiers" value="zPosition(2) arc"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5Q-Cc-RYw">
+                                <rect key="frame" x="223" y="183" width="75" height="75"/>
+                                <color key="backgroundColor" red="0.33910316229999998" green="0.73554944990000004" blue="0.53971123700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Icf-Id-4LU"/>
+                                    <constraint firstAttribute="width" constant="75" id="TSm-R3-oWk"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="green"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="zPosition(3) arc"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifiers" value="zPosition(3) arc"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="purple" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWY-F1-Yyx">
+                                <rect key="frame" x="135" y="154" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.2388712764" green="0.33509445189999998" blue="0.42733851080000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="purpleLabel"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="green" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zf-cG-c26">
+                                <rect key="frame" x="238" y="154" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.2388712764" green="0.33509445189999998" blue="0.42733851080000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="greenLabel"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HeroID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8Z-vK-MPx">
+                                <rect key="frame" x="132" y="117" width="56" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="0.2388712764" green="0.33509445189999998" blue="0.42733851080000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="heroIDLabel"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="blue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEG-sJ-enT">
+                                <rect key="frame" x="43" y="154" width="33" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.2388712764" green="0.33509445189999998" blue="0.42733851080000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="blueLabel"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdB-TY-vGq">
+                                <rect key="frame" x="4" y="28" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="HyP-cH-U5R"/>
+                                    <constraint firstAttribute="width" constant="48" id="QX2-BU-uKy"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="ic_keyboard_arrow_down"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="fade translate(0, -150)"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="back"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifiers" value="fade translate(0, -150)"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ht_dismiss:" destination="RBZ-75-wzu" eventType="touchUpInside" id="ktL-1S-D6Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSf-Jj-ehO">
+                                <rect key="frame" x="144" y="358" width="32" height="30"/>
+                                <color key="tintColor" red="0.2388712764" green="0.33509445189999998" blue="0.42733851080000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="translate(0,100) fade"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifiers" value="translate(0,100) fade"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="0qI-hm-d2S" kind="show" id="o3x-NK-oi2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eSf-Jj-ehO" firstAttribute="centerX" secondItem="wgV-hu-7r0" secondAttribute="centerX" id="0c0-ck-ARC"/>
+                            <constraint firstItem="Mb5-9p-oWq" firstAttribute="centerY" secondItem="wgV-hu-7r0" secondAttribute="centerY" id="95O-c7-lxt"/>
+                            <constraint firstItem="Kv7-FP-mBJ" firstAttribute="leading" secondItem="Mb5-9p-oWq" secondAttribute="trailing" constant="8" id="Cam-sm-1yL"/>
+                            <constraint firstItem="fEG-sJ-enT" firstAttribute="centerX" secondItem="Mb5-9p-oWq" secondAttribute="centerX" id="DZz-H0-abE"/>
+                            <constraint firstItem="Kv7-FP-mBJ" firstAttribute="top" secondItem="VWY-F1-Yyx" secondAttribute="bottom" constant="8" id="Hv7-wf-i40"/>
+                            <constraint firstItem="eSf-Jj-ehO" firstAttribute="top" secondItem="Kv7-FP-mBJ" secondAttribute="bottom" constant="100" id="KAI-xX-RLV"/>
+                            <constraint firstItem="d5Q-Cc-RYw" firstAttribute="top" secondItem="1zf-cG-c26" secondAttribute="bottom" constant="8" id="KPC-5q-bF5"/>
+                            <constraint firstItem="hdB-TY-vGq" firstAttribute="leading" secondItem="wgV-hu-7r0" secondAttribute="leadingMargin" constant="-12" id="NRw-ai-elz"/>
+                            <constraint firstItem="Mb5-9p-oWq" firstAttribute="top" secondItem="fEG-sJ-enT" secondAttribute="bottom" constant="8" id="aew-sx-8Ih"/>
+                            <constraint firstItem="VWY-F1-Yyx" firstAttribute="top" secondItem="K8Z-vK-MPx" secondAttribute="bottom" constant="16" id="doq-P5-oOG"/>
+                            <constraint firstItem="1zf-cG-c26" firstAttribute="centerX" secondItem="d5Q-Cc-RYw" secondAttribute="centerX" id="egr-fP-v2a"/>
+                            <constraint firstItem="Kv7-FP-mBJ" firstAttribute="centerX" secondItem="wgV-hu-7r0" secondAttribute="centerX" id="fnS-pc-nIJ"/>
+                            <constraint firstItem="K8Z-vK-MPx" firstAttribute="centerX" secondItem="wgV-hu-7r0" secondAttribute="centerX" id="nte-aC-aqo"/>
+                            <constraint firstItem="d5Q-Cc-RYw" firstAttribute="centerY" secondItem="wgV-hu-7r0" secondAttribute="centerY" id="rHI-cJ-Rwd"/>
+                            <constraint firstItem="hdB-TY-vGq" firstAttribute="top" secondItem="Sgh-tj-GBW" secondAttribute="bottom" constant="8" id="sEn-1J-XUW"/>
+                            <constraint firstItem="d5Q-Cc-RYw" firstAttribute="leading" secondItem="Kv7-FP-mBJ" secondAttribute="trailing" constant="8" id="vBf-yR-lLD"/>
+                            <constraint firstItem="Kv7-FP-mBJ" firstAttribute="centerY" secondItem="wgV-hu-7r0" secondAttribute="centerY" id="vv0-WT-uLL"/>
+                            <constraint firstItem="VWY-F1-Yyx" firstAttribute="centerX" secondItem="Kv7-FP-mBJ" secondAttribute="centerX" id="vvf-qx-a1S"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="440"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RBZ-75-wzu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--View Controller 2-->
+        <scene sceneID="W8L-kp-Fhy">
+            <objects>
+                <viewController title="View Controller 2" id="0qI-hm-d2S" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PDu-TN-6HE"/>
+                        <viewControllerLayoutGuide type="bottom" id="qZf-8v-CpH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5ce-1N-ArP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="440"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gP3-7D-ETi">
+                                <rect key="frame" x="35" y="88" width="150" height="75"/>
+                                <color key="backgroundColor" red="0.3231979311" green="0.62352418899999995" blue="0.80385208129999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="SuZ-qS-LoA"/>
+                                    <constraint firstAttribute="height" constant="75" id="c0c-W3-nel"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="blue"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="zPosition(1) arc"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifiers" value="zPosition(1) arc"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ht_dismiss:" destination="hiY-gA-6b6" eventType="touchUpInside" id="svi-6c-57S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8t-4H-12w">
+                                <rect key="frame" x="35" y="183" width="150" height="75"/>
+                                <color key="backgroundColor" red="0.65110915899999999" green="0.49157077069999999" blue="0.75600677729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Abg-0q-eu0"/>
+                                    <constraint firstAttribute="height" constant="75" id="abV-tz-8MF"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="purple"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="zPosition(2) arc"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifiers" value="zPosition(2) arc"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ht_dismiss:" destination="hiY-gA-6b6" eventType="touchUpInside" id="Std-Qq-eTi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DId-uO-Rg5">
+                                <rect key="frame" x="35" y="278" width="150" height="75"/>
+                                <color key="backgroundColor" red="0.33910316229999998" green="0.73554944990000004" blue="0.53971123700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Qk1-1H-dYq"/>
+                                    <constraint firstAttribute="height" constant="75" id="cB3-dz-0SM"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="green"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="zPosition(3) arc"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifiers" value="zPosition(3) arc"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ht_dismiss:" destination="hiY-gA-6b6" eventType="touchUpInside" id="NZb-hi-glr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="purple" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ruj-N2-4H9">
+                                <rect key="frame" x="201" y="210" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.2388712764" green="0.33509445189999998" blue="0.42733851080000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="purpleLabel"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="green" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wl-RH-ysR">
+                                <rect key="frame" x="201" y="305" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.2388712764" green="0.33509445189999998" blue="0.42733851080000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="greenLabel"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="blue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEe-xp-lfD">
+                                <rect key="frame" x="201" y="115" width="33" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.2388712764" green="0.33509445189999998" blue="0.42733851080000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="blueLabel"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HeroID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HqU-tm-n1J">
+                                <rect key="frame" x="201" y="48" width="56" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="0.2388712764" green="0.33509445189999998" blue="0.42733851080000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="heroIDLabel"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wxc-ki-aIX">
+                                <rect key="frame" x="4" y="28" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="CBd-sz-vKS"/>
+                                    <constraint firstAttribute="width" constant="48" id="txT-JJ-bud"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="ic_keyboard_arrow_down"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="fade translate(0, -150)"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="back"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifiers" value="fade translate(0, -150)"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ht_dismiss:" destination="hiY-gA-6b6" eventType="touchUpInside" id="DCn-VD-tgf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gP3-7D-ETi" firstAttribute="centerX" secondItem="5ce-1N-ArP" secondAttribute="centerX" constant="-50" id="0jU-Be-gYM"/>
+                            <constraint firstItem="Ruj-N2-4H9" firstAttribute="leading" secondItem="HqU-tm-n1J" secondAttribute="leading" id="7dW-h8-RLa"/>
+                            <constraint firstItem="7wl-RH-ysR" firstAttribute="leading" secondItem="HqU-tm-n1J" secondAttribute="leading" id="Jsb-tO-yfD"/>
+                            <constraint firstItem="Ruj-N2-4H9" firstAttribute="leading" secondItem="B8t-4H-12w" secondAttribute="trailing" constant="16" id="Mu8-cT-X88"/>
+                            <constraint firstItem="DId-uO-Rg5" firstAttribute="top" secondItem="B8t-4H-12w" secondAttribute="bottom" constant="20" id="NqL-Ic-WuT"/>
+                            <constraint firstItem="mEe-xp-lfD" firstAttribute="leading" secondItem="HqU-tm-n1J" secondAttribute="leading" id="OIg-yZ-wzR"/>
+                            <constraint firstItem="Wxc-ki-aIX" firstAttribute="leading" secondItem="5ce-1N-ArP" secondAttribute="leadingMargin" constant="-12" id="RkX-re-3wy"/>
+                            <constraint firstItem="B8t-4H-12w" firstAttribute="centerX" secondItem="5ce-1N-ArP" secondAttribute="centerX" constant="-50" id="ccJ-B6-x7S"/>
+                            <constraint firstItem="B8t-4H-12w" firstAttribute="centerY" secondItem="5ce-1N-ArP" secondAttribute="centerY" id="kSG-tT-Pxe"/>
+                            <constraint firstItem="Wxc-ki-aIX" firstAttribute="top" secondItem="PDu-TN-6HE" secondAttribute="bottom" constant="8" id="ohB-aK-fgz"/>
+                            <constraint firstItem="7wl-RH-ysR" firstAttribute="top" secondItem="Ruj-N2-4H9" secondAttribute="bottom" constant="74" id="qYO-Zs-78F"/>
+                            <constraint firstItem="Ruj-N2-4H9" firstAttribute="top" secondItem="mEe-xp-lfD" secondAttribute="bottom" constant="74" id="vrG-XF-akf"/>
+                            <constraint firstItem="mEe-xp-lfD" firstAttribute="top" secondItem="HqU-tm-n1J" secondAttribute="bottom" constant="46" id="w41-44-3D4"/>
+                            <constraint firstItem="Ruj-N2-4H9" firstAttribute="centerY" secondItem="5ce-1N-ArP" secondAttribute="centerY" id="yhu-HT-Zv1"/>
+                            <constraint firstItem="B8t-4H-12w" firstAttribute="top" secondItem="gP3-7D-ETi" secondAttribute="bottom" constant="20" id="zlR-nP-zZn"/>
+                            <constraint firstItem="DId-uO-Rg5" firstAttribute="centerX" secondItem="5ce-1N-ArP" secondAttribute="centerX" constant="-50" id="zpR-q6-Vpw"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="440"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hiY-gA-6b6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="672" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_keyboard_arrow_down" width="24" height="24"/>
+    </resources>
+</document>
